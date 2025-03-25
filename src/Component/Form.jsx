@@ -15,9 +15,9 @@ const[data,setdata]=useState({
      const searchimage=async()=>{
         let res;
         try {
-           res= await axios.post("http://localhost:3000/api/generate-image", data
-               
-            )
+           res= await axios.post("https://imagegeneratorbackend-ufs8.onrender.com", {data} )
+            console.log(res.data);
+           
           } catch (error) {
             console.log(error);
             

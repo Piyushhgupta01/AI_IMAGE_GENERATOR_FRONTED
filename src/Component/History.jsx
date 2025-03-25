@@ -66,7 +66,7 @@ const filteredImage=history.filter((item)=>
 const loadimage =async()=>{
     let res;
     try {
-        res = await axios.get("http://localhost:3000/api/get-image");
+        res = await axios.get("https://imagegeneratorbackend-ufs8.onrender.com");
         if (!res) {
             console.log("image are not found")
             
